@@ -99,8 +99,10 @@ public class MainActivity extends AppCompatActivity {
        for(int i=0;i<=2;i++)
        {
            row[i]=col[i]=cross[i]=1;
-           for(int j=0;j<=2;j++)
-               mat[i][j]=0;
+           for(int j=0;j<=2;j++) {
+               mat[i][j] = 0;
+               visited[i][j]=0;
+           }
        }
        count=0;
        flip=p;

@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
+//    public static final String exName="inhuman";
     public int mat[][]={{0,0,0},
                         {0,0,0},
                         {0,0,0}};
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         txt=findViewById(R.id.textView4);
         Intent intent = getIntent();
-       // int f = intent.getIntExtra(MenuBar.exName,MenuBar.st);
+//        int ft = intent.getIntExtra(exName,0);
         int ft=MenuBar.st;
         flip=p=ft;
     }

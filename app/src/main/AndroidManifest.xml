@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tictactoe">
         <activity
-            android:name=".MainActivity"
-            android:parentActivityName=".MenuBar"
+            android:name=".WithPc"
             android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:parentActivityName=".MenuBar" />
         <activity
             android:name=".MenuBar"
             android:exported="true">

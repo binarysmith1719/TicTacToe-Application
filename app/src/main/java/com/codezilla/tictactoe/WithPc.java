@@ -288,9 +288,12 @@ public class WithPc extends AppCompatActivity {
                              int re=2,ce=0;
                              if(difficulty!=3)
                              {
+                                 Random rand2 = new Random();
+                                 int y = rand1.nextInt(10);
                                  for(int i=0;i<6;i++){if(twowinpos[i]!=-1){int a=((twowinpos[i]%100)/10),b=twowinpos[i]%10;
-                                     if(a==0&&b==0 || a==0&&b==2 || a==2&&b==0 || a==2&&b==2){
-                                         if(x>5){re=a;ce=b;break;}else{re=a;ce=b;}}}}
+                                     if(a==0&&b==0 || a==0&&b==2 || a==2&&b==0 || a==2&&b==2){re=a;ce=b;}}}
+
+                                 if(y<5 && re==ce)re=ce=0;
                              }
                          int rw=0,cl=1;
                          if(x>0 && x<=2){if(difficulty==3){rw=0;cl=1;}else{rw=re;cl=ce;}}
